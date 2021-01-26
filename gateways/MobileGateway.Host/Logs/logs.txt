@@ -1,0 +1,663 @@
+2020-11-01 13:18:37.136 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 13:35:41.458 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 13:35:47.502 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 46
+2020-11-01 13:50:20.994 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 13:55:58.909 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:06:07.290 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:06:08.286 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 42
+2020-11-01 14:07:33.022 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:07:33.837 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 42
+2020-11-01 14:13:55.629 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:15:15.345 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:16:48.577 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:16:55.047 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:32:24.293 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:33:10.129 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:33:32.277 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:33:33.480 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:34:14.568 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:34:32.262 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:34:54.867 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:35:49.734 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 14:37:50.683 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:38:07.566 +01:00 [INF] Loaded ABP modules:
+2020-11-01 14:38:07.570 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-11-01 14:38:07.570 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-11-01 14:38:07.571 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-11-01 14:38:07.572 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2020-11-01 14:38:07.573 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2020-11-01 14:38:07.573 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2020-11-01 14:38:07.573 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-11-01 14:38:07.573 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-11-01 14:38:07.574 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-11-01 14:38:07.574 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-11-01 14:38:07.574 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-11-01 14:38:07.574 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-11-01 14:38:07.574 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2020-11-01 14:42:00.547 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 14:42:10.296 +01:00 [INF] Loaded ABP modules:
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-11-01 14:42:10.298 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2020-11-01 14:42:10.299 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2020-11-01 14:42:10.300 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2020-11-01 14:42:10.300 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2020-11-01 14:42:10.300 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-11-01 14:42:10.300 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-11-01 14:42:10.300 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2020-11-01 14:42:59.042 +01:00 [FTL] Application startup exception
+Volo.Abp.AbpInitializationException: An error occurred during the initialize Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor phase of the module MobileGateway.Host.MobileGatewayHostModule, MobileGateway.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null: SwaggerEndPoints configuration section is missing or empty.. See the inner exception for details.
+ ---> System.InvalidOperationException: SwaggerEndPoints configuration section is missing or empty.
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.AddSwaggerEndPoints(SwaggerUIOptions c, IReadOnlyList`1 endPoints, String basePath)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.<>c__DisplayClass0_0.<UseSwaggerForOcelotUI>b__0(SwaggerUIOptions c)
+   at Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(IApplicationBuilder app, Action`1 setupAction)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.UseSwaggerForOcelotUI(IApplicationBuilder app, Action`1 setupAction)
+   at MobileGateway.Host.MobileGatewayHostModule.OnApplicationInitialization(ApplicationInitializationContext context) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\MobileGatewayHostModule.cs:line 121
+   at Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor.Initialize(ApplicationInitializationContext context, IAbpModule module)
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   --- End of inner exception stack trace ---
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   at Volo.Abp.AbpApplicationBase.InitializeModules()
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider.Initialize(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at MobileGateway.Host.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Startup.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-11-01 14:42:59.479 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during the initialize Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor phase of the module MobileGateway.Host.MobileGatewayHostModule, MobileGateway.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null: SwaggerEndPoints configuration section is missing or empty.. See the inner exception for details.
+ ---> System.InvalidOperationException: SwaggerEndPoints configuration section is missing or empty.
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.AddSwaggerEndPoints(SwaggerUIOptions c, IReadOnlyList`1 endPoints, String basePath)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.<>c__DisplayClass0_0.<UseSwaggerForOcelotUI>b__0(SwaggerUIOptions c)
+   at Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(IApplicationBuilder app, Action`1 setupAction)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.UseSwaggerForOcelotUI(IApplicationBuilder app, Action`1 setupAction)
+   at MobileGateway.Host.MobileGatewayHostModule.OnApplicationInitialization(ApplicationInitializationContext context) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\MobileGatewayHostModule.cs:line 121
+   at Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor.Initialize(ApplicationInitializationContext context, IAbpModule module)
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   --- End of inner exception stack trace ---
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   at Volo.Abp.AbpApplicationBase.InitializeModules()
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider.Initialize(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at MobileGateway.Host.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Startup.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2020-11-01 15:01:49.332 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 15:02:02.301 +01:00 [INF] Loaded ABP modules:
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-11-01 15:02:02.305 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2020-11-01 15:02:02.306 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-11-01 15:02:02.307 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2020-11-01 15:02:02.308 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2020-11-01 15:02:02.308 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2020-11-01 15:02:02.308 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-11-01 15:02:02.308 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-11-01 15:02:02.308 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2020-11-01 15:14:19.364 +01:00 [INF] Starting MobileGateway.Host.
+2020-11-01 15:14:26.875 +01:00 [INF] Loaded ABP modules:
+2020-11-01 15:14:26.878 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-11-01 15:14:26.878 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-11-01 15:14:26.879 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-11-01 15:14:26.880 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-11-01 15:14:26.881 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-11-01 15:14:26.882 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2020-11-01 15:14:26.883 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2020-11-01 15:14:26.883 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2020-11-01 15:14:26.883 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2020-11-01 15:14:26.883 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-11-01 15:14:26.884 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-11-01 15:14:26.885 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-11-01 15:14:26.886 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-11-01 15:14:26.886 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-11-01 15:14:26.886 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2020-11-01 15:19:50.095 +01:00 [FTL] Application startup exception
+Volo.Abp.AbpInitializationException: An error occurred during the initialize Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor phase of the module MobileGateway.Host.MobileGatewayHostModule, MobileGateway.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null: SwaggerEndPoints configuration section is missing or empty.. See the inner exception for details.
+ ---> System.InvalidOperationException: SwaggerEndPoints configuration section is missing or empty.
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.AddSwaggerEndPoints(SwaggerUIOptions c, IReadOnlyList`1 endPoints, String basePath)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.<>c__DisplayClass0_0.<UseSwaggerForOcelotUI>b__0(SwaggerUIOptions c)
+   at Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(IApplicationBuilder app, Action`1 setupAction)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.UseSwaggerForOcelotUI(IApplicationBuilder app, Action`1 setupAction)
+   at MobileGateway.Host.MobileGatewayHostModule.OnApplicationInitialization(ApplicationInitializationContext context) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\MobileGatewayHostModule.cs:line 121
+   at Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor.Initialize(ApplicationInitializationContext context, IAbpModule module)
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   --- End of inner exception stack trace ---
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   at Volo.Abp.AbpApplicationBase.InitializeModules()
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider.Initialize(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at MobileGateway.Host.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Startup.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-11-01 15:19:50.379 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during the initialize Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor phase of the module MobileGateway.Host.MobileGatewayHostModule, MobileGateway.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null: SwaggerEndPoints configuration section is missing or empty.. See the inner exception for details.
+ ---> System.InvalidOperationException: SwaggerEndPoints configuration section is missing or empty.
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.AddSwaggerEndPoints(SwaggerUIOptions c, IReadOnlyList`1 endPoints, String basePath)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.<>c__DisplayClass0_0.<UseSwaggerForOcelotUI>b__0(SwaggerUIOptions c)
+   at Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(IApplicationBuilder app, Action`1 setupAction)
+   at Microsoft.AspNetCore.Builder.BuilderExtensions.UseSwaggerForOcelotUI(IApplicationBuilder app, Action`1 setupAction)
+   at MobileGateway.Host.MobileGatewayHostModule.OnApplicationInitialization(ApplicationInitializationContext context) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\MobileGatewayHostModule.cs:line 121
+   at Volo.Abp.Modularity.OnApplicationInitializationModuleLifecycleContributor.Initialize(ApplicationInitializationContext context, IAbpModule module)
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   --- End of inner exception stack trace ---
+   at Volo.Abp.Modularity.ModuleManager.InitializeModules(ApplicationInitializationContext context)
+   at Volo.Abp.AbpApplicationBase.InitializeModules()
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider.Initialize(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at MobileGateway.Host.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Startup.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43
+2021-01-11 15:59:37.293 +01:00 [INF] Starting MobileGateway.Host.
+2021-01-11 16:01:01.497 +01:00 [INF] Loaded ABP modules:
+2021-01-11 16:01:01.500 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-11 16:01:01.500 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-11 16:01:01.500 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-11 16:01:01.500 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-11 16:01:01.501 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-11 16:01:01.501 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-11 16:01:01.501 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-11 16:01:01.502 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2021-01-11 16:01:01.503 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2021-01-11 16:01:01.503 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2021-01-11 16:01:01.503 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-11 16:01:01.503 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-01-11 16:01:01.503 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2021-01-11 16:01:08.545 +01:00 [INF] Initialized all ABP modules.
+2021-01-11 16:01:12.568 +01:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:65130: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-01-11 17:10:25.935 +01:00 [INF] Starting MobileGateway.Host.
+2021-01-11 17:11:35.411 +01:00 [INF] Loaded ABP modules:
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-11 17:11:35.415 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-11 17:11:35.416 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Blogging.BloggingHttpApiModule
+2021-01-11 17:11:35.417 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2021-01-11 17:11:35.417 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2021-01-11 17:11:35.417 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-11 17:11:35.417 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-11 17:11:35.418 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-01-11 17:11:35.418 +01:00 [INF] - MobileGateway.Host.MobileGatewayHostModule
+2021-01-11 17:16:11.714 +01:00 [INF] Initialized all ABP modules.
+2021-01-11 17:16:21.602 +01:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:65130: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-01-11 17:16:26.628 +01:00 [FTL] MobileGateway.Host terminated unexpectedly!
+System.IO.IOException: Failed to bind to address http://127.0.0.1:65130: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MobileGateway.Host.Program.Main(String[] args) in C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\MobileGateway.Host\Program.cs:line 43

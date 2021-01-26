@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "name": "africellerp-backend-admin-app-host",
+  "private": true,
+  "dependencies": {
+    "@abp/aspnetcore.mvc.ui.theme.basic": "4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

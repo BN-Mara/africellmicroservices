@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Africell.Erp.Survey</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.1.0" />
+    <ProjectReference Include="..\Africell.Erp.Survey.Application.Contracts\Africell.Erp.Survey.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

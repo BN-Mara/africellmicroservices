@@ -1,0 +1,14 @@
+{
+  "culture": "en",
+  "texts": {
+    "Permission:SubscriberManagement": "Subscriber Management",
+    "Permission:Subscribers": "Subscribers",
+    "Permission:Individual": "Individual",
+    "Permission:Entreprise": "Entreprise",
+    "Permission:Edit": "Edit",
+    "Permission:Delete": "Delete",
+    "Permission:Create": "Create",
+    "Permission:Verify": "Verify",
+    "Permission:ViewAll": "ViewAll"
+  }
+}

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>6a663284-58dc-40dd-9b12-bd5e27006144</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <Nullable>annotations</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MMLib.SwaggerForOcelot" Version="4.0.0" />
+    <PackageReference Include="Ocelot" Version="17.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Volo.Abp" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.MultiTenancy" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.Core" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="4.1.0" />
+    <PackageReference Include="Volo.Blogging.HttpApi" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\subscriber\src\SubscriberManagement.HttpApi\SubscriberManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\shared\Africell.Erp.Shared\Africell.Erp.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
