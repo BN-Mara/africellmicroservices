@@ -40,6 +40,10 @@
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\Africell.Erp.Shared\Africell.Erp.Shared.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

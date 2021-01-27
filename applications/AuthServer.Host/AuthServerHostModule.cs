@@ -1,4 +1,5 @@
-﻿using AuthServer.Host.EntityFrameworkCore;
+﻿using Africell.Erp.Shared;
+using AuthServer.Host.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.DependencyInjection;
@@ -89,6 +90,10 @@ namespace AuthServer.Host
             app.UseCorrelationId();
             app.UseVirtualFiles();
             app.UseRouting();
+            if (AfricellErpConsts.IsMultiTenancyEnabled)
+            {
+                app.UseMultiTenancy();
+            }
             app.UseIdentityServer();
             app.UseAbpRequestLocalization();
             app.UseAuditing();

@@ -118,8 +118,9 @@ namespace AuthServer.Host
                 commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "SubscriberService","SurveyService" }),
                 new[] { "hybrid" },
                 commonSecret,
-                redirectUri: "http://localhost:51954/signin-oidc",
-                postLogoutRedirectUri: "http://localhost:51954/signout-callback-oidc"
+                permissions: new[] { IdentityPermissions.Users.Default, "SubscriberManagement.Individual", "SubscriberManagement.Entreprise" },
+                redirectUri: "http://localhost:64600/signin-oidc",
+                postLogoutRedirectUri: "http://localhost:64600/signout-callback-oidc"
             );
 
             await CreateClientAsync(
