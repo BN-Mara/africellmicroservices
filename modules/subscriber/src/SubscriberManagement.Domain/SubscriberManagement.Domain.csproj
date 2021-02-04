@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.1.0" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.1.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.2.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.2.0" />
     <ProjectReference Include="..\..\..\..\shared\Africell.Erp.Shared\Africell.Erp.Shared.csproj" />
     <ProjectReference Include="..\SubscriberManagement.Domain.Shared\SubscriberManagement.Domain.Shared.csproj" />
   </ItemGroup>

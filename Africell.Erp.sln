@@ -93,7 +93,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendAdminApp.Host", "app
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicWebSiteGateway.Host", "gateways\PublicWebSiteGateway.Host\PublicWebSiteGateway.Host.csproj", "{809B7162-886C-4FB0-A331-722B8F9E2A1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileGateway.Host", "gateways\MobileGateway.Host\MobileGateway.Host.csproj", "{A54A44DB-9693-4E79-A646-671580046130}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileGateway.Host", "gateways\MobileGateway.Host\MobileGateway.Host.csproj", "{A54A44DB-9693-4E79-A646-671580046130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

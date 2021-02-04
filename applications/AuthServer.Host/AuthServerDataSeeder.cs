@@ -7,6 +7,7 @@ using Volo.Abp.DependencyInjection;
 using Volo.Abp.Guids;
 using Volo.Abp.Identity;
 using Volo.Abp.IdentityServer.ApiResources;
+using Volo.Abp.IdentityServer.ApiScopes;
 using Volo.Abp.IdentityServer.Clients;
 using Volo.Abp.IdentityServer.IdentityResources;
 using Volo.Abp.PermissionManagement;
@@ -16,6 +17,7 @@ namespace AuthServer.Host
 {
     public class AuthServerDataSeeder : IDataSeedContributor, ITransientDependency
     {
+        private readonly IApiScopeRepository apiScopeRepository;
         private readonly IApiResourceRepository _apiResourceRepository;
         private readonly IClientRepository _clientRepository;
         private readonly IIdentityResourceDataSeeder _identityResourceDataSeeder;
@@ -87,7 +89,6 @@ namespace AuthServer.Host
                     apiResource.AddUserClaim(claim);
                 }
             }
-
             return await _apiResourceRepository.UpdateAsync(apiResource);
         }
 
@@ -116,7 +117,7 @@ namespace AuthServer.Host
             await CreateClientAsync(
                 "backend-admin-app-client",
                 commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "SubscriberService","SurveyService" }),
-                new[] { "hybrid" },
+                new[] { "client_credentials",  "authorization_code" },
                 commonSecret,
                 permissions: new[] { IdentityPermissions.Users.Default, "SubscriberManagement.Individual", "SubscriberManagement.Entreprise" },
                 redirectUri: "http://localhost:64600/signin-oidc",

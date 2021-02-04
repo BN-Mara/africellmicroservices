@@ -83,12 +83,15 @@ namespace BackendAdminApp.Host
                     options.ClientId = configuration["AuthServer:ClientId"];
                     options.ClientSecret = configuration["AuthServer:ClientSecret"];
                     options.RequireHttpsMetadata = false;
-                    options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
+                    //options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
+                    options.ResponseType = OpenIdConnectResponseType.Code;
+                    options.UsePkce = true;
                     options.SaveTokens = true;
                     options.GetClaimsFromUserInfoEndpoint = true;
                     options.Scope.Add("role");
                     options.Scope.Add("email");
                     options.Scope.Add("phone");
+                    options.Scope.Add("name");
                     options.Scope.Add("BackendAdminAppGateway");
                     options.Scope.Add("IdentityService");
                     options.Scope.Add("SubscriberService");

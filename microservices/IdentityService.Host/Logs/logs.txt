@@ -3784,3 +3784,1098 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13
 2021-01-25 14:11:46.355 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
 2021-01-25 14:11:47.084 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
 2021-01-25 14:12:00.396 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'SettingManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:53:19.654 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 09:53:52.564 +01:00 [INF] Loaded ABP modules:
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 09:53:52.566 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 09:53:52.567 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 09:53:52.568 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 09:53:52.568 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 09:53:56.657 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 09:53:56.687 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 09:53:56.687 +01:00 [INF] Hosting environment: Development
+2021-01-27 09:53:56.688 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 09:53:56.760 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 09:53:56.913 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:53:59.985 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 09:54:00.159 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 09:54:00.502 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 09:54:00.513 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4765ms.
+2021-01-27 09:54:00.521 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 09:54:00.534 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 363.521ms
+2021-01-27 09:54:00.535 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 09:54:03.250 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:54:05.266 +01:00 [INF] Executed DbCommand (113ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:54:05.309 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 09:54:20.220 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:54:20.220 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:54:20.283 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 23528.9367ms
+2021-01-27 09:54:20.314 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 09:54:20.317 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:54:20.321 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 7.5377ms
+2021-01-27 09:54:20.586 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 09:54:20.591 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:54:20.703 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 117.1284ms
+2021-01-27 09:54:24.640 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 09:54:24.641 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:54:24.642 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 09:54:24.645 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:54:24.647 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 09:54:24.647 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:54:29.234 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 09:54:29.236 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 4595.7282ms
+2021-01-27 09:54:30.916 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 09:54:30.923 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 6276.0198ms
+2021-01-27 09:54:32.965 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 09:54:33.028 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 8385.6801ms
+2021-01-27 09:55:48.214 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 09:55:48.216 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:55:48.260 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:55:48.644 +01:00 [INF] Executed DbCommand (338ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:55:48.708 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:55:48.708 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:55:48.718 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 503.8186ms
+2021-01-27 09:56:09.131 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 09:56:09.131 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:56:09.208 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:56:09.218 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:56:09.230 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:56:09.230 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:56:09.232 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 101.7019ms
+2021-01-27 09:56:09.412 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 09:56:09.413 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:56:09.937 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 522.7655ms
+2021-01-27 09:57:05.659 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 09:58:08.967 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 09:58:30.750 +01:00 [INF] Loaded ABP modules:
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 09:58:30.752 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 09:58:30.753 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 09:58:30.822 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 09:58:30.822 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 09:58:30.822 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 09:58:30.822 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 09:58:30.822 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 09:58:30.823 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 09:58:30.823 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 09:58:33.043 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 09:58:33.069 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 09:58:33.069 +01:00 [INF] Hosting environment: Development
+2021-01-27 09:58:33.071 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 09:58:33.171 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 09:58:33.342 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:35.161 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 09:58:35.358 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 09:58:35.704 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 09:58:35.717 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4127ms.
+2021-01-27 09:58:35.726 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 09:58:35.741 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 371.0416ms
+2021-01-27 09:58:35.742 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 09:58:38.509 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:58:40.259 +01:00 [INF] Executed DbCommand (124ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:58:40.304 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 09:58:40.467 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:40.467 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:40.524 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 7359.9345ms
+2021-01-27 09:58:40.578 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 09:58:40.584 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:40.591 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 13.0038ms
+2021-01-27 09:58:40.634 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 09:58:40.641 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:40.780 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 145.3007ms
+2021-01-27 09:58:40.953 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 09:58:40.954 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:40.955 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 09:58:40.955 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:40.968 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 09:58:40.969 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:41.286 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 09:58:41.286 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 09:58:41.286 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 09:58:41.295 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 342.2228ms
+2021-01-27 09:58:41.340 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 371.5506ms
+2021-01-27 09:58:41.369 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 414.7556ms
+2021-01-27 09:58:41.797 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 09:58:41.797 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:41.809 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:58:41.863 +01:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:58:41.887 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:41.887 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:41.890 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 93.1263ms
+2021-01-27 09:58:42.230 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 09:58:42.237 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:42.314 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 09:58:42.373 +01:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 09:58:42.392 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:42.392 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 09:58:42.396 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 166.2184ms
+2021-01-27 09:58:42.684 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 09:58:42.685 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 09:58:43.268 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 584.1630ms
+2021-01-27 10:47:20.894 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 10:48:19.118 +01:00 [INF] Loaded ABP modules:
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 10:48:19.120 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 10:48:19.121 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 10:48:19.128 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 10:48:19.129 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 10:48:19.130 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 10:48:19.132 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 10:48:19.133 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 10:48:19.133 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 10:48:19.133 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 10:48:19.133 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 10:48:19.133 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 10:48:19.133 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 10:48:22.351 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 10:48:22.377 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 10:48:22.377 +01:00 [INF] Hosting environment: Development
+2021-01-27 10:48:22.379 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 10:48:22.522 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 10:48:22.701 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:30.827 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'SettingManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:48:35.788 +01:00 [INF] Executed DbCommand (152ms) [Parameters=[@__providerName_0='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[ProviderKey], [a].[ProviderName], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE ([a].[ProviderName] = @__providerName_0) AND [a].[ProviderKey] IS NULL
+2021-01-27 10:48:37.066 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'SettingManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:48:37.120 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[@__providerName_0='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[ProviderKey], [a].[ProviderName], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE ([a].[ProviderName] = @__providerName_0) AND [a].[ProviderKey] IS NULL
+2021-01-27 10:48:38.315 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 10:48:38.690 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 10:48:39.114 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 10:48:39.124 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5192ms.
+2021-01-27 10:48:39.136 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 10:48:39.154 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 447.5123ms
+2021-01-27 10:48:39.155 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 10:48:40.155 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:48:41.143 +01:00 [INF] Executed DbCommand (258ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:48:41.326 +01:00 [INF] Executed DbCommand (171ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 10:48:41.435 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:48:41.435 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:48:41.552 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 19048.4098ms
+2021-01-27 10:48:41.840 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 10:48:41.947 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:41.953 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 113.3263ms
+2021-01-27 10:48:41.991 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 10:48:41.999 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:42.177 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 185.9931ms
+2021-01-27 10:48:42.501 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 10:48:42.501 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 10:48:42.502 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 10:48:42.502 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:42.502 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:42.502 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:48:42.817 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 10:48:42.826 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 10:48:42.854 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 351.7879ms
+2021-01-27 10:48:43.047 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 10:48:43.060 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 558.7566ms
+2021-01-27 10:48:43.141 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 639.7267ms
+2021-01-27 10:49:11.936 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 10:49:11.937 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:49:11.948 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:49:11.973 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:49:12.007 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:49:12.007 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:49:12.010 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 74.5912ms
+2021-01-27 10:49:13.364 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 10:49:13.365 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:49:13.375 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:49:13.488 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:49:13.618 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:49:13.618 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:49:13.788 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 423.4220ms
+2021-01-27 10:49:14.226 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 10:49:14.228 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:49:15.155 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 928.9026ms
+2021-01-27 10:55:53.284 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 10:56:18.298 +01:00 [INF] Loaded ABP modules:
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 10:56:18.304 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 10:56:18.305 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 10:56:18.306 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 10:56:18.306 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 10:56:20.998 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 10:56:21.026 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 10:56:21.026 +01:00 [INF] Hosting environment: Development
+2021-01-27 10:56:21.028 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 10:56:21.164 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 10:56:21.354 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:24.481 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 10:56:24.706 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 10:56:25.057 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 10:56:25.068 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4686ms.
+2021-01-27 10:56:25.077 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 10:56:25.092 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 373.2683ms
+2021-01-27 10:56:25.093 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 10:56:27.762 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:56:32.087 +01:00 [INF] Executed DbCommand (181ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:56:32.131 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 10:56:32.354 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:56:32.354 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:56:32.446 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 11290.3409ms
+2021-01-27 10:56:32.560 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 10:56:32.568 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:32.571 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 10.0360ms
+2021-01-27 10:56:32.614 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 10:56:32.624 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:32.809 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 194.4941ms
+2021-01-27 10:56:37.591 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 10:56:37.592 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:37.595 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 10:56:37.598 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 10:56:37.598 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:37.598 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:56:37.876 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 10:56:37.909 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 317.7961ms
+2021-01-27 10:56:37.909 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 10:56:38.129 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 10:56:38.170 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 575.0448ms
+2021-01-27 10:56:38.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 766.5484ms
+2021-01-27 10:57:57.372 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 10:57:57.373 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:57:57.387 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:57:57.478 +01:00 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:57:57.514 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:57:57.514 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:57:57.518 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 146.0564ms
+2021-01-27 10:58:07.525 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 10:58:07.526 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:58:07.603 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 10:58:07.770 +01:00 [INF] Executed DbCommand (145ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 10:58:07.814 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:58:07.814 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 10:58:07.816 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 291.3713ms
+2021-01-27 10:58:17.257 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 10:58:17.258 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 10:58:17.721 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 464.4457ms
+2021-01-27 11:00:53.203 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 11:05:40.711 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 11:05:50.688 +01:00 [INF] Loaded ABP modules:
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 11:05:50.690 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 11:05:50.691 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 11:05:50.692 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 11:05:50.692 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 11:05:50.692 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 11:05:50.692 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 11:05:50.692 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 11:05:52.384 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 11:05:52.419 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 11:05:52.420 +01:00 [INF] Hosting environment: Development
+2021-01-27 11:05:52.421 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 11:05:52.513 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 11:05:52.678 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:05:56.585 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:05:56.774 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 11:05:57.067 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 11:05:57.078 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5273ms.
+2021-01-27 11:05:57.088 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 11:05:57.101 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 314.448ms
+2021-01-27 11:05:57.102 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:05:59.384 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:06:01.400 +01:00 [INF] Executed DbCommand (126ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:06:01.438 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 11:06:01.731 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:01.732 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:01.785 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 9278.7088ms
+2021-01-27 11:06:01.800 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 11:06:01.838 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:01.841 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 40.7498ms
+2021-01-27 11:06:01.865 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 11:06:01.872 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:02.006 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 140.5084ms
+2021-01-27 11:06:04.638 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 11:06:04.639 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:04.641 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 11:06:04.641 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:04.642 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 11:06:04.643 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:04.716 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 11:06:04.716 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 11:06:04.716 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 11:06:04.723 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 84.6533ms
+2021-01-27 11:06:04.735 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 92.2733ms
+2021-01-27 11:06:04.755 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 115.0927ms
+2021-01-27 11:06:44.440 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 11:06:44.441 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:44.455 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:06:44.607 +01:00 [INF] Executed DbCommand (118ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:06:44.616 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:44.616 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:44.632 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 191.4950ms
+2021-01-27 11:06:58.366 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 11:06:58.366 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:06:58.436 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:06:58.464 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:06:58.466 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:58.466 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:06:58.468 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 102.2807ms
+2021-01-27 11:07:00.052 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 11:07:00.052 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:07:00.727 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 674.9690ms
+2021-01-27 11:19:48.840 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 11:20:13.231 +01:00 [INF] Loaded ABP modules:
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 11:20:13.233 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 11:20:13.237 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 11:20:13.238 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 11:20:13.239 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 11:20:13.239 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 11:20:13.239 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 11:20:13.239 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 11:20:13.239 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 11:20:13.239 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 11:20:16.056 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 11:20:16.085 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 11:20:16.085 +01:00 [INF] Hosting environment: Development
+2021-01-27 11:20:16.086 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 11:20:16.174 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 11:20:16.321 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:18.051 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:20:18.434 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 11:20:18.753 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 11:20:18.875 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4534ms.
+2021-01-27 11:20:19.072 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 11:20:19.084 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 639.6701ms
+2021-01-27 11:20:19.085 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:20:21.889 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:20:24.234 +01:00 [INF] Executed DbCommand (120ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:20:24.273 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 11:20:24.385 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:24.385 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:24.442 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 8277.7545ms
+2021-01-27 11:20:24.477 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 11:20:24.493 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:24.501 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 24.0463ms
+2021-01-27 11:20:24.544 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 11:20:24.551 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:24.701 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 156.9547ms
+2021-01-27 11:20:31.690 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 11:20:31.691 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:31.692 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 11:20:31.693 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:31.693 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 11:20:31.694 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:32.020 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 11:20:32.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 332.2653ms
+2021-01-27 11:20:32.209 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 11:20:32.223 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 529.1996ms
+2021-01-27 11:20:33.316 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 11:20:33.346 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 1653.7681ms
+2021-01-27 11:20:36.726 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 11:20:36.728 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:36.739 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:20:36.766 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:20:37.047 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:37.047 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:37.053 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 326.1953ms
+2021-01-27 11:20:43.608 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 11:20:43.609 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:43.688 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:20:44.236 +01:00 [INF] Executed DbCommand (537ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:20:44.645 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:44.645 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:20:44.647 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 1038.8757ms
+2021-01-27 11:20:48.298 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 11:20:48.299 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:20:48.853 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 555.2864ms
+2021-01-27 11:30:20.491 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 11:30:39.439 +01:00 [INF] Loaded ABP modules:
+2021-01-27 11:30:39.442 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 11:30:39.443 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 11:30:39.444 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 11:30:39.445 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 11:30:39.445 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 11:30:41.234 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 11:30:41.261 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 11:30:41.262 +01:00 [INF] Hosting environment: Development
+2021-01-27 11:30:41.263 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 11:30:41.345 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 11:30:41.487 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:44.009 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:30:44.194 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 11:30:44.524 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 11:30:44.533 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4213ms.
+2021-01-27 11:30:44.542 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 11:30:44.558 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 349.944ms
+2021-01-27 11:30:44.559 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:30:47.231 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:30:49.271 +01:00 [INF] Executed DbCommand (118ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:30:49.311 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 11:30:49.437 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:49.437 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:49.523 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 8182.0622ms
+2021-01-27 11:30:49.552 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 11:30:49.572 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:49.575 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 22.3347ms
+2021-01-27 11:30:49.591 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 11:30:49.596 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:49.720 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 128.5086ms
+2021-01-27 11:30:58.165 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 11:30:58.167 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:58.258 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 11:30:58.258 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:58.273 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 11:30:58.274 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:58.344 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 11:30:58.349 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 11:30:58.355 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 11:30:58.363 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 197.7991ms
+2021-01-27 11:30:58.377 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 119.1028ms
+2021-01-27 11:30:58.461 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 187.5550ms
+2021-01-27 11:30:58.823 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 11:30:58.824 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:58.834 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:30:58.874 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:30:58.882 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:58.882 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:58.884 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 60.7744ms
+2021-01-27 11:30:59.220 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 11:30:59.220 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:30:59.409 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:30:59.478 +01:00 [INF] Executed DbCommand (60ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:30:59.505 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:59.505 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:30:59.508 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 287.5832ms
+2021-01-27 11:30:59.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 11:30:59.736 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:31:00.362 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 626.5620ms
+2021-01-27 11:44:02.672 +01:00 [INF] Starting IdentityService.Host.
+2021-01-27 11:44:13.264 +01:00 [INF] Loaded ABP modules:
+2021-01-27 11:44:13.265 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-01-27 11:44:13.266 +01:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-01-27 11:44:13.267 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-01-27 11:44:13.268 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-01-27 11:44:13.269 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-01-27 11:44:13.270 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-01-27 11:44:13.271 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-01-27 11:44:13.271 +01:00 [INF] - IdentityService.Host.IdentityServiceHostModule
+2021-01-27 11:44:14.965 +01:00 [INF] Initialized all ABP modules.
+2021-01-27 11:44:14.990 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-27 11:44:14.991 +01:00 [INF] Hosting environment: Development
+2021-01-27 11:44:14.992 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\microservices\IdentityService.Host
+2021-01-27 11:44:15.095 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/ - -
+2021-01-27 11:44:15.244 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:16.540 +01:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:44:16.745 +01:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (IdentityService.Host).
+2021-01-27 11:44:17.110 +01:00 [INF] Executing action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) - Validation state: "Valid"
+2021-01-27 11:44:17.121 +01:00 [INF] Executed action method IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5304ms.
+2021-01-27 11:44:17.131 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-01-27 11:44:17.144 +01:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host) in 387.0275ms
+2021-01-27 11:44:17.145 +01:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (IdentityService.Host)'
+2021-01-27 11:44:19.511 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:44:34.799 +01:00 [WRN] None of the specified endpoints were reachable
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.IO.IOException: connection.start was never received, likely due to a network timeout
+   at RabbitMQ.Client.Framing.Impl.Connection.StartAndTune()
+   at RabbitMQ.Client.Framing.Impl.Connection.Open(Boolean insist)
+   at RabbitMQ.Client.Framing.Impl.Connection..ctor(IConnectionFactory factory, Boolean insist, IFrameHandler frameHandler, String clientProvidedName)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IFrameHandler fh)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at Volo.Abp.RabbitMQ.ConnectionPool.<>c__DisplayClass8_0.<Get>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.RabbitMQ.ConnectionPool.Get(String connectionName)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannelAsync()
+2021-01-27 11:44:36.057 +01:00 [INF] Executed DbCommand (180ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:44:36.144 +01:00 [INF] Executed DbCommand (53ms) [Parameters=[@p22='?' (DbType = Guid), @p23='?' (DbType = Guid), @p24='?' (DbType = Int32), @p25='?' (DbType = DateTime2), @p26='?' (Size = 4000), @p27='?' (Size = 128), @p28='?' (Size = 2000), @p29='?' (Size = 256), @p30='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogActions] ([Id], [AuditLogId], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [MethodName], [Parameters], [ServiceName], [TenantId])
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30);
+2021-01-27 11:44:36.378 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:36.378 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:36.486 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/ - - - 302 - - 21401.2406ms
+2021-01-27 11:44:36.539 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger - -
+2021-01-27 11:44:36.664 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:36.672 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger - - - 301 - - 133.5358ms
+2021-01-27 11:44:36.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/index.html - -
+2021-01-27 11:44:36.927 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:37.070 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/index.html - - - 200 - text/html;charset=utf-8 240.1486ms
+2021-01-27 11:44:38.711 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - -
+2021-01-27 11:44:38.740 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - -
+2021-01-27 11:44:38.747 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:38.755 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - -
+2021-01-27 11:44:38.755 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:38.756 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:39.131 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-27 11:44:39.131 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-27 11:44:39.131 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-27 11:44:39.143 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui.css - - - 200 142933 text/css 431.3075ms
+2021-01-27 11:44:39.160 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 420.0603ms
+2021-01-27 11:44:39.206 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 451.1613ms
+2021-01-27 11:44:40.987 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - -
+2021-01-27 11:44:41.002 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:41.111 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:44:41.272 +01:00 [INF] Executed DbCommand (104ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:44:41.358 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:41.358 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:41.368 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-bundle.js.map - - - 404 - - 378.5138ms
+2021-01-27 11:44:43.306 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - -
+2021-01-27 11:44:43.307 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:43.394 +01:00 [INF] Entity Framework Core 5.0.1 initialized 'AbpAuditLoggingDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery 
+2021-01-27 11:44:43.428 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 96), @p2='?' (Size = 512), @p3='?' (Size = 64), @p4='?' (Size = 64), @p5='?' (Size = 128), @p6='?' (Size = 256), @p7='?' (Size = 40), @p8='?' (Size = 64), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (Size = 16), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (Size = 4000), @p19='?' (Size = 256), @p20='?' (DbType = Guid), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([Id], [ApplicationName], [BrowserInfo], [ClientId], [ClientIpAddress], [ClientName], [Comments], [ConcurrencyStamp], [CorrelationId], [Exceptions], [ExecutionDuration], [ExecutionTime], [ExtraProperties], [HttpMethod], [HttpStatusCode], [ImpersonatorTenantId], [ImpersonatorUserId], [TenantId], [TenantName], [Url], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+2021-01-27 11:44:43.478 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:43.479 +01:00 [DBG] Added 0 entity changes to the current audit log
+2021-01-27 11:44:43.487 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 180.8297ms
+2021-01-27 11:44:43.745 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - -
+2021-01-27 11:44:43.745 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-01-27 11:44:44.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:63568/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 750.4563ms
