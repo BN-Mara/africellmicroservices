@@ -11177,3 +11177,198 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2021-01-27 11:45:07.169 +01:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 3130.5486ms
 2021-01-27 11:45:07.170 +01:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
 2021-01-27 11:45:07.177 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:65115/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 3173.0191ms
+2021-02-04 10:43:15.996 +01:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-02-04 10:44:05.264 +01:00 [INF] Loaded ABP modules:
+2021-02-04 10:44:05.266 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2021-02-04 10:44:05.266 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.UI.AbpUiModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-02-04 10:44:05.267 +01:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-02-04 10:44:05.268 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-02-04 10:44:05.268 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-02-04 10:44:05.268 +01:00 [INF] - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-02-04 10:44:05.268 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-02-04 10:44:05.268 +01:00 [INF] - SubscriberManagement.SubscriberManagementDomainSharedModule
+2021-02-04 10:44:05.268 +01:00 [INF] - SubscriberManagement.SubscriberManagementApplicationContractsModule
+2021-02-04 10:44:05.268 +01:00 [INF] - SubscriberManagement.SubscriberManagementHttpApiModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Blogging.BloggingDomainSharedModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Blogging.BloggingApplicationContractsModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-02-04 10:44:05.298 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-02-04 10:44:05.299 +01:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-02-04 10:44:05.299 +01:00 [INF] - BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule
+2021-02-04 10:44:20.350 +01:00 [INF] Initialized all ABP modules.
+2021-02-04 10:44:20.364 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 10:44:20.364 +01:00 [INF] Hosting environment: Development
+2021-02-04 10:44:20.365 +01:00 [INF] Content root path: C:\Users\gmalulu\Documents\Visual Studio 2019\Projects\Africell.Erp\gateways\BackendAdminAppGateway.Host
+2021-02-04 10:44:20.565 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:65115/api/abp/api-definition - -
+2021-02-04 10:44:20.565 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:65115/ - -
+2021-02-04 10:44:21.394 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-02-04 10:44:21.394 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-02-04 10:44:21.618 +01:00 [DBG] requestId: 80000002-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-02-04 10:44:21.626 +01:00 [DBG] requestId: 80000002-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Upstream url path is /
+2021-02-04 10:44:21.634 +01:00 [WRN] requestId: 80000002-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-02-04 10:44:21.637 +01:00 [WRN] requestId: 80000002-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-02-04 10:44:21.639 +01:00 [DBG] requestId: 80000002-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-02-04 10:44:21.672 +01:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-02-04 10:44:24.348 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:65115/ - - - 404 - - 3790.2226ms
+2021-02-04 10:44:26.264 +01:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2021-02-04 10:44:26.732 +01:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-02-04 10:44:27.123 +01:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.Get
+2021-02-04 10:44:27.137 +01:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.PostByFileConfiguration
+2021-02-04 10:44:27.145 +01:00 [DBG] ActionApiDescriptionModel.Create: OutputCache.DeleteByRegion
+2021-02-04 10:44:27.147 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.CreateAsyncByInput
+2021-02-04 10:44:27.147 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.148 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.GetListAsyncByInput
+2021-02-04 10:44:27.148 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.VerifyAsyncByIdAndIsValid
+2021-02-04 10:44:27.148 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.GetListAsync
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Entreprise.GetAsyncById
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.CreateAsyncByInput
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.VerifyAsyncByIdAndIsValid
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.GetListAsyncByInput
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.GetListAsync
+2021-02-04 10:44:27.149 +01:00 [DBG] ActionApiDescriptionModel.Create: Individual.GetAsyncById
+2021-02-04 10:44:27.150 +01:00 [DBG] ActionApiDescriptionModel.Create: Subscriber.Index
+2021-02-04 10:44:27.150 +01:00 [DBG] ActionApiDescriptionModel.Create: Subscriber.IndexByPhoneNumber
+2021-02-04 10:44:27.150 +01:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2021-02-04 10:44:27.150 +01:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: Features.GetAsyncByProviderNameAndProviderKey
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: Features.UpdateAsyncByProviderNameAndProviderKeyAndInput
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAllListAsync
+2021-02-04 10:44:27.151 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetListAsyncByInput
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAsyncById
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.CreateAsyncByInput
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.DeleteAsyncById
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAsyncById
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetListAsyncByInput
+2021-02-04 10:44:27.152 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.CreateAsyncByInput
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.DeleteAsyncById
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetRolesAsyncById
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAssignableRolesAsync
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateRolesAsyncByIdAndInput
+2021-02-04 10:44:27.153 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByUsernameAsyncByUserName
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByEmailAsyncByEmail
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByIdAsyncById
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByUserNameAsyncByUserName
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.SearchAsyncByInput
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.GetCountAsyncByInput
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: Profile.GetAsync
+2021-02-04 10:44:27.154 +01:00 [DBG] ActionApiDescriptionModel.Create: Profile.UpdateAsyncByInput
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: Profile.ChangePasswordAsyncByInput
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: Permissions.GetAsyncByProviderNameAndProviderKey
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: Permissions.UpdateAsyncByProviderNameAndProviderKeyAndInput
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetAsyncByName
+2021-02-04 10:44:27.155 +01:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetForWebAsyncByName
+2021-02-04 10:44:27.166 +01:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.CreateAsyncByInput
+2021-02-04 10:44:27.166 +01:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.UploadImageByFile
+2021-02-04 10:44:27.166 +01:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetListAsync
+2021-02-04 10:44:27.166 +01:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetByShortNameAsyncByShortName
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetAsyncById
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Comments.GetHierarchicalListOfPostAsyncByPostId
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Comments.CreateAsyncByInput
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Comments.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Comments.DeleteAsyncById
+2021-02-04 10:44:27.167 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetListByBlogIdAndTagNameByBlogIdAndTagName
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetTimeOrderedListAsyncByBlogId
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetForReadingAsyncByInput
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetAsyncById
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.CreateAsyncByInput
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.UpdateAsyncByIdAndInput
+2021-02-04 10:44:27.168 +01:00 [DBG] ActionApiDescriptionModel.Create: Posts.DeleteAsyncById
+2021-02-04 10:44:27.169 +01:00 [DBG] ActionApiDescriptionModel.Create: Tags.GetPopularTagsByBlogIdAndInput
+2021-02-04 10:44:27.179 +01:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 435.6783ms.
+2021-02-04 10:44:27.319 +01:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2021-02-04 10:44:27.504 +01:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 1231.3394ms
+2021-02-04 10:44:27.504 +01:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-02-04 10:44:27.655 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:65115/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 7098.9988ms
+2021-02-04 10:44:27.776 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:65115/api/abp/application-configuration?api-version=1.0 - -
+2021-02-04 10:44:27.777 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-02-04 10:44:27.787 +01:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-02-04 10:44:27.798 +01:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2021-02-04 10:44:27.918 +01:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-02-04 10:44:27.944 +01:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2021-02-04 10:44:28.015 +01:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2021-02-04 10:44:55.447 +01:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2021-02-04 10:44:55.453 +01:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 27534.2184ms.
+2021-02-04 10:44:55.999 +01:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2021-02-04 10:44:56.061 +01:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 28263.3171ms
+2021-02-04 10:44:56.062 +01:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-02-04 10:44:56.068 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:65115/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 28291.3624ms
+2021-02-07 08:30:16.681 +01:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-02-10 10:27:13.843 +01:00 [INF] Starting BackendAdminAppGateway.Host.

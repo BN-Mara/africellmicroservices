@@ -90,10 +90,7 @@ namespace AuthServer.Host
             app.UseCorrelationId();
             app.UseVirtualFiles();
             app.UseRouting();
-            if (AfricellErpConsts.IsMultiTenancyEnabled)
-            {
-                app.UseMultiTenancy();
-            }
+            if (AfricellErpConsts.IsMultiTenancyEnabled) app.UseMultiTenancy();
             app.UseIdentityServer();
             app.UseAbpRequestLocalization();
             app.UseAuditing();

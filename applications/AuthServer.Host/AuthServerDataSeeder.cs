@@ -89,6 +89,7 @@ namespace AuthServer.Host
                     apiResource.AddUserClaim(claim);
                 }
             }
+            apiResource.AddScope(name);
             return await _apiResourceRepository.UpdateAsync(apiResource);
         }
 
