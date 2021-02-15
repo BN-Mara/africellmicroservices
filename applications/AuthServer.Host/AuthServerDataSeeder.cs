@@ -89,7 +89,7 @@ namespace AuthServer.Host
                     apiResource.AddUserClaim(claim);
                 }
             }
-            apiResource.AddScope(name);
+           // apiResource.AddScope(name);
             return await _apiResourceRepository.UpdateAsync(apiResource);
         }
 
@@ -212,7 +212,6 @@ namespace AuthServer.Host
                     client.AddPostLogoutRedirectUri(postLogoutRedirectUri);
                 }
             }
-
             if (permissions != null)
             {
                 await _permissionDataSeeder.SeedAsync(

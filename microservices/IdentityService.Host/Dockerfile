@@ -8,7 +8,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0.3-nanoserver-20H2 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0.3-nanoserver-20H2 AS build
 WORKDIR /src
 COPY ["IdentityService.Host/IdentityService.Host.csproj", "IdentityService.Host/"]
 RUN dotnet restore "IdentityService.Host/IdentityService.Host.csproj"

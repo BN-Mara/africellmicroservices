@@ -1,11 +1,11 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0.3-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0.3-buster-slim AS build
 WORKDIR /src
 COPY . .
-WORKDIR /src/templates/service/host/Africell.Erp.Survey.HttpApi.Host
+WORKDIR /src/microservices/SurveyService.Host
 RUN dotnet restore -nowarn:msb3202,nu1503
 RUN dotnet build --no-restore -c Release -o /app
 
