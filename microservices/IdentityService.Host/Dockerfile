@@ -10,10 +10,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0.3-nanoserver-20H2 AS build
 WORKDIR /src
-COPY ["IdentityService.Host/IdentityService.Host.csproj", "IdentityService.Host/"]
+COPY ["/microservices/IdentityService.Host/IdentityService.Host.csproj", "IdentityService.Host/"]
 RUN dotnet restore "IdentityService.Host/IdentityService.Host.csproj"
 COPY . .
-WORKDIR "/src/IdentityService.Host"
+WORKDIR "/microservices/IdentityService.Host"
 RUN dotnet build "IdentityService.Host.csproj" -c Release -o /app/build
 
 FROM build AS publish

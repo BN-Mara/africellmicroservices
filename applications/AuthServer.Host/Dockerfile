@@ -1,11 +1,11 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0.3-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0.3-buster-slim AS build
 WORKDIR /src
 COPY ["applications/AuthServer.Host/AuthServer.Host.csproj", "applications/AuthServer.Host/"]
-COPY ["shared/MsDemo.Shared/MsDemo.Shared.csproj", "shared/MsDemo.Shared/"]
+COPY ["shared/Africell.Erp.Shared/Africell.Erp.Shared.csproj", "shared/Africell.Erp.Shared/"]
 RUN dotnet restore "applications/AuthServer.Host/AuthServer.Host.csproj" -nowarn:msb3202,msb3277,nu1503
 COPY . .
 WORKDIR "/src/applications/AuthServer.Host"
