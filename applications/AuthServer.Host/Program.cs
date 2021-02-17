@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Hosting;
@@ -24,6 +24,7 @@ namespace AuthServer.Host
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
                 .Enrich.WithProperty("Application", "AuthServer")
                 .Enrich.FromLogContext()
                 .WriteTo.File("Logs/logs.txt")
@@ -32,7 +33,7 @@ namespace AuthServer.Host
                     {
                         AutoRegisterTemplate = true,
                         AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv6,
-                        IndexFormat = "authserver-log-{0:yyyy.MM}"
+                        IndexFormat = "msdemo-log-{0:yyyy.MM}"
                     })
                 .CreateLogger();
 

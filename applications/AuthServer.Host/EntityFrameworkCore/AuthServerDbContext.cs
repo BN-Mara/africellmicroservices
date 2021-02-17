@@ -12,7 +12,7 @@ namespace AuthServer.Host.EntityFrameworkCore
 {
     public class AuthServerDbContext : AbpDbContext<AuthServerDbContext>
     {
-        public AuthServerDbContext(DbContextOptions<AuthServerDbContext> options)
+        public AuthServerDbContext(DbContextOptions<AuthServerDbContext> options) 
             : base(options)
         {
 
@@ -21,7 +21,6 @@ namespace AuthServer.Host.EntityFrameworkCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
 
             modelBuilder.ConfigureIdentity();
             modelBuilder.ConfigureIdentityServer();

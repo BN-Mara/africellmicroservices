@@ -17,7 +17,7 @@ namespace AuthServer.Host
 {
     public class AuthServerDataSeeder : IDataSeedContributor, ITransientDependency
     {
-        private readonly IApiScopeRepository apiScopeRepository;
+        private readonly IApiScopeRepository _apiScopeRepository;
         private readonly IApiResourceRepository _apiResourceRepository;
         private readonly IClientRepository _clientRepository;
         private readonly IIdentityResourceDataSeeder _identityResourceDataSeeder;
@@ -27,12 +27,14 @@ namespace AuthServer.Host
         public AuthServerDataSeeder(
             IClientRepository clientRepository,
             IApiResourceRepository apiResourceRepository,
+            IApiScopeRepository apiScopeRepository,
             IIdentityResourceDataSeeder identityResourceDataSeeder,
             IGuidGenerator guidGenerator,
             IPermissionDataSeeder permissionDataSeeder)
         {
             _clientRepository = clientRepository;
             _apiResourceRepository = apiResourceRepository;
+            _apiScopeRepository = apiScopeRepository;
             _identityResourceDataSeeder = identityResourceDataSeeder;
             _guidGenerator = guidGenerator;
             _permissionDataSeeder = permissionDataSeeder;
@@ -43,7 +45,25 @@ namespace AuthServer.Host
         {
             await _identityResourceDataSeeder.CreateStandardResourcesAsync();
             await CreateApiResourcesAsync();
+            await CreateApiScopesAsync();
             await CreateClientsAsync();
+        }
+        private async Task<ApiScope> CreateApiScopeAsync(string name)
+        {
+            var apiScope = await _apiScopeRepository.GetByNameAsync(name);
+            if (apiScope == null)
+            {
+                apiScope = await _apiScopeRepository.InsertAsync(
+                    new ApiScope(
+                        _guidGenerator.Create(),
+                        name,
+                        name + " API"
+                    ),
+                    autoSave: true
+                );
+            }
+
+            return apiScope;
         }
 
         private async Task CreateApiResourcesAsync()
@@ -65,6 +85,16 @@ namespace AuthServer.Host
             await CreateApiResourceAsync("BackendAdminAppGateway", commonApiUserClaims);
             await CreateApiResourceAsync("PublicWebSiteGateway", commonApiUserClaims);
             await CreateApiResourceAsync("MobileGateway", commonApiUserClaims);
+        }
+        private async Task CreateApiScopesAsync()
+        {
+            await CreateApiScopeAsync("IdentityService");
+            await CreateApiScopeAsync("SurveyService");
+            await CreateApiScopeAsync("SubscriberService");
+            await CreateApiScopeAsync("InternalGateway");
+            await CreateApiScopeAsync("BackendAdminAppGateway");
+            await CreateApiScopeAsync("PublicWebSiteGateway");
+            await CreateApiScopeAsync("MobileGateway");
         }
 
         private async Task<ApiResource> CreateApiResourceAsync(string name, IEnumerable<string> claims)
@@ -89,7 +119,7 @@ namespace AuthServer.Host
                     apiResource.AddUserClaim(claim);
                 }
             }
-           // apiResource.AddScope(name);
+            // apiResource.AddScope(name);
             return await _apiResourceRepository.UpdateAsync(apiResource);
         }
 
@@ -104,7 +134,8 @@ namespace AuthServer.Host
                 "profile",
                 "role",
                 "phone",
-                "address"
+                "address",
+
             };
 
             await CreateClientAsync(
@@ -117,8 +148,9 @@ namespace AuthServer.Host
 
             await CreateClientAsync(
                 "backend-admin-app-client",
-                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "SubscriberService","SurveyService" }),
-                new[] { "client_credentials",  "authorization_code" },
+                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "SubscriberService", "SurveyService" }),
+                new[] { "hybrid", "client_credentials" },
+                //{ "client_credentials",  "authorization_code" },
                 commonSecret,
                 permissions: new[] { IdentityPermissions.Users.Default, "SubscriberManagement.Individual", "SubscriberManagement.Entreprise" },
                 redirectUri: "http://localhost:64600/signin-oidc",
@@ -170,10 +202,12 @@ namespace AuthServer.Host
                         AccessTokenLifetime = 31536000, //365 days
                         AuthorizationCodeLifetime = 300,
                         IdentityTokenLifetime = 300,
-                        RequireConsent = false
+                        RequireConsent = false,
+                        RequirePkce = false
+
                     },
                     autoSave: true
-                );
+                ); ;
             }
 
             foreach (var scope in scopes)
@@ -203,6 +237,8 @@ namespace AuthServer.Host
                 {
                     client.AddRedirectUri(redirectUri);
                 }
+                if (client.FrontChannelLogoutUri == null)
+                    client.FrontChannelLogoutUri = redirectUri;
             }
 
             if (postLogoutRedirectUri != null)

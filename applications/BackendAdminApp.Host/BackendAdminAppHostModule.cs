@@ -27,6 +27,10 @@ using Volo.Abp.UI.Navigation;
 using Volo.Blogging;
 using SubscriberManagement;
 using Africell.Erp.Shared;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 
 namespace BackendAdminApp.Host
 {
@@ -67,7 +71,7 @@ namespace BackendAdminApp.Host
             {
                 options.MenuContributors.Add(new BackendAdminAppMenuContributor(configuration));
             });
-
+            context.Services.AddSameSiteCookiePolicy();
             context.Services.AddAuthentication(options =>
                 {
                     options.DefaultScheme = "Cookies";
@@ -76,6 +80,9 @@ namespace BackendAdminApp.Host
                 .AddCookie("Cookies", options =>
                 {
                     options.ExpireTimeSpan = TimeSpan.FromDays(365);
+                    //options.Cookie.SameSite = SameSiteMode.None;
+                    //options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                    //options.Cookie.IsEssential = true;
                 })
                 .AddOpenIdConnect("oidc", options =>
                 {
@@ -83,15 +90,13 @@ namespace BackendAdminApp.Host
                     options.ClientId = configuration["AuthServer:ClientId"];
                     options.ClientSecret = configuration["AuthServer:ClientSecret"];
                     options.RequireHttpsMetadata = false;
-                    //options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
-                    options.ResponseType = OpenIdConnectResponseType.Code;
-                    options.UsePkce = true;
+                    options.UsePkce = false;
+                    options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
                     options.SaveTokens = true;
                     options.GetClaimsFromUserInfoEndpoint = true;
                     options.Scope.Add("role");
                     options.Scope.Add("email");
                     options.Scope.Add("phone");
-                    options.Scope.Add("name");
                     options.Scope.Add("BackendAdminAppGateway");
                     options.Scope.Add("IdentityService");
                     options.Scope.Add("SubscriberService");
@@ -120,10 +125,19 @@ namespace BackendAdminApp.Host
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
         {
             var app = context.GetApplicationBuilder();
-
+            var env = context.GetEnvironment();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            if (!env.IsDevelopment())
+            {
+                app.UseErrorPage();
+            }
             app.UseCorrelationId();
             app.UseVirtualFiles();
             app.UseRouting();
+            app.UseCookiePolicy();
             app.UseAuthentication();
             if (AfricellErpConsts.IsMultiTenancyEnabled)
             {

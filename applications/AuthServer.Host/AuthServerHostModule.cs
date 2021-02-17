@@ -1,7 +1,10 @@
-﻿using Africell.Erp.Shared;
+using Africell.Erp.Shared;
 using AuthServer.Host.EntityFrameworkCore;
+using IdentityServer4;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
 using Volo.Abp;
@@ -10,7 +13,6 @@ using Volo.Abp.Account.Web;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 using Volo.Abp.Auditing;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
-using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Autofac;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -21,29 +23,31 @@ using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement;
+using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
+using Volo.Abp.TenantManagement;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 
 namespace AuthServer.Host
 {
     [DependsOn(
-         typeof(AbpAutofacModule),
-         typeof(AbpEventBusRabbitMqModule),
-         typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-         typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-         typeof(AbpSettingManagementEntityFrameworkCoreModule),
-         typeof(AbpIdentityEntityFrameworkCoreModule),
-         typeof(AbpIdentityApplicationContractsModule),
-         typeof(AbpAccountApplicationModule),
-         typeof(AbpIdentityServerEntityFrameworkCoreModule),
-         typeof(AbpEntityFrameworkCoreSqlServerModule),
-         typeof(AbpAccountWebIdentityServerModule),
-         typeof(AbpAspNetCoreMvcUiBasicThemeModule)
-         //typeof(AbpTenantManagementEntityFrameworkCoreModule),
-         //typeof(AbpTenantManagementApplicationContractsModule)
-     )]
+        typeof(AbpAutofacModule),
+        typeof(AbpEventBusRabbitMqModule),
+        typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+        typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        typeof(AbpSettingManagementEntityFrameworkCoreModule),
+        typeof(AbpIdentityEntityFrameworkCoreModule),
+        typeof(AbpIdentityApplicationContractsModule),
+        typeof(AbpAccountApplicationModule),
+        typeof(AbpIdentityServerEntityFrameworkCoreModule),
+        typeof(AbpEntityFrameworkCoreSqlServerModule),
+        typeof(AbpAccountWebIdentityServerModule),
+        typeof(AbpAspNetCoreMvcUiBasicThemeModule),
+        typeof(AbpTenantManagementEntityFrameworkCoreModule),
+        typeof(AbpTenantManagementApplicationContractsModule)
+    )]
     public class AuthServerHostModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -55,6 +59,11 @@ namespace AuthServer.Host
                 options.AddDefaultRepositories();
             });
 
+            Configure<AbpMultiTenancyOptions>(options =>
+            {
+                options.IsEnabled = AfricellErpConsts.IsMultiTenancyEnabled;
+            });
+
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseSqlServer();
@@ -63,7 +72,6 @@ namespace AuthServer.Host
             Configure<AbpLocalizationOptions>(options =>
             {
                 options.Languages.Add(new LanguageInfo("en", "en", "English"));
-                options.Languages.Add(new LanguageInfo("fr", "fr", "French"));
             });
 
             context.Services.AddStackExchangeRedisCache(options =>
@@ -76,11 +84,17 @@ namespace AuthServer.Host
                 options.IsEnabledForGetRequests = true;
                 options.ApplicationName = "AuthServer";
             });
-
+            context.Services.AddSameSiteCookiePolicy();
+            context.Services.Configure<CookieAuthenticationOptions>(IdentityServerConstants.DefaultCookieAuthenticationScheme, options =>
+            {
+                options.Cookie.SameSite = SameSiteMode.None;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                options.Cookie.IsEssential = true;
+            });
             //TODO: ConnectionMultiplexer.Connect call has problem since redis may not be ready when this service has started!
             var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
             context.Services.AddDataProtection()
-                .PersistKeysToStackExchangeRedis(redis, "AfricellERP-DataProtection-Keys");
+                .PersistKeysToStackExchangeRedis(redis, "MsDemo-DataProtection-Keys");
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -90,13 +104,20 @@ namespace AuthServer.Host
             app.UseCorrelationId();
             app.UseVirtualFiles();
             app.UseRouting();
-            if (AfricellErpConsts.IsMultiTenancyEnabled) app.UseMultiTenancy();
-            app.UseIdentityServer();
+            app.UseCookiePolicy();
             app.UseAbpRequestLocalization();
-            app.UseAuditing();
-            //app.UseMvcWithDefaultRouteAndArea();
-            app.UseConfiguredEndpoints();
+            
+            app.UseAuthentication();
 
+            if (AfricellErpConsts.IsMultiTenancyEnabled)
+            {
+                app.UseMultiTenancy();
+            }
+            app.UseIdentityServer();
+            app.UseAuthorization();
+            app.UseAuditing();
+            app.UseConfiguredEndpoints();
+           
             //TODO: Problem on a clustered environment
             AsyncHelper.RunSync(async () =>
             {
@@ -110,4 +131,3 @@ namespace AuthServer.Host
         }
     }
 }
-

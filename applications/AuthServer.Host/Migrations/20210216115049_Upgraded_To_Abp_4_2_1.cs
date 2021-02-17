@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AuthServer.Host.Migrations
 {
-    public partial class Update_to_abp_41 : Migration
+    public partial class Upgraded_To_Abp_4_2_1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

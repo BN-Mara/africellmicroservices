@@ -11,15 +11,15 @@ using Volo.Abp.EntityFrameworkCore;
 namespace AuthServer.Host.Migrations
 {
     [DbContext(typeof(AuthServerDbContext))]
-    [Migration("20200918100731_Initial")]
-    partial class Initial
+    [Migration("20201015020843_Upgraded_To_Abp_3_2_1")]
+    partial class Upgraded_To_Abp_3_2_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("_Abp_DatabaseProvider", EfCoreDatabaseProvider.SqlServer)
-                .HasAnnotation("ProductVersion", "3.1.8")
+                .HasAnnotation("ProductVersion", "3.1.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

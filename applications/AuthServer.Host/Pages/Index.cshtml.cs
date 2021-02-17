@@ -1,5 +1,4 @@
-﻿using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
-
+using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
 
 namespace AuthServer.Host.Pages
 {
@@ -7,7 +6,6 @@ namespace AuthServer.Host.Pages
     {
         public void OnGet()
         {
-
         }
     }
 }

@@ -6,22 +6,20 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Volo.Abp.EntityFrameworkCore;
 
 namespace AuthServer.Host.Migrations
 {
     [DbContext(typeof(AuthServerDbContext))]
-    [Migration("20210114135724_Update_to_abp_4.1")]
-    partial class Update_to_abp_41
+    [Migration("20200525053551_Added_OrganizationUnits")]
+    partial class Added_OrganizationUnits
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("_Abp_DatabaseProvider", EfCoreDatabaseProvider.SqlServer)
+                .HasAnnotation("ProductVersion", "3.1.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.1");
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLog", b =>
                 {
@@ -30,99 +28,98 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ApplicationName")
-                        .HasMaxLength(96)
+                        .HasColumnName("ApplicationName")
                         .HasColumnType("nvarchar(96)")
-                        .HasColumnName("ApplicationName");
+                        .HasMaxLength(96);
 
                     b.Property<string>("BrowserInfo")
-                        .HasMaxLength(512)
+                        .HasColumnName("BrowserInfo")
                         .HasColumnType("nvarchar(512)")
-                        .HasColumnName("BrowserInfo");
+                        .HasMaxLength(512);
 
                     b.Property<string>("ClientId")
-                        .HasMaxLength(64)
+                        .HasColumnName("ClientId")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("ClientId");
+                        .HasMaxLength(64);
 
                     b.Property<string>("ClientIpAddress")
-                        .HasMaxLength(64)
+                        .HasColumnName("ClientIpAddress")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("ClientIpAddress");
+                        .HasMaxLength(64);
 
                     b.Property<string>("ClientName")
-                        .HasMaxLength(128)
+                        .HasColumnName("ClientName")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("ClientName");
+                        .HasMaxLength(128);
 
                     b.Property<string>("Comments")
-                        .HasMaxLength(256)
+                        .HasColumnName("Comments")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("Comments");
+                        .HasMaxLength(256);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CorrelationId")
-                        .HasMaxLength(64)
+                        .HasColumnName("CorrelationId")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("CorrelationId");
+                        .HasMaxLength(64);
 
                     b.Property<string>("Exceptions")
-                        .HasMaxLength(4000)
+                        .HasColumnName("Exceptions")
                         .HasColumnType("nvarchar(4000)")
-                        .HasColumnName("Exceptions");
+                        .HasMaxLength(4000);
 
                     b.Property<int>("ExecutionDuration")
-                        .HasColumnType("int")
-                        .HasColumnName("ExecutionDuration");
+                        .HasColumnName("ExecutionDuration")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ExecutionTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HttpMethod")
-                        .HasMaxLength(16)
+                        .HasColumnName("HttpMethod")
                         .HasColumnType("nvarchar(16)")
-                        .HasColumnName("HttpMethod");
+                        .HasMaxLength(16);
 
                     b.Property<int?>("HttpStatusCode")
-                        .HasColumnType("int")
-                        .HasColumnName("HttpStatusCode");
+                        .HasColumnName("HttpStatusCode")
+                        .HasColumnType("int");
 
                     b.Property<Guid?>("ImpersonatorTenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("ImpersonatorTenantId");
+                        .HasColumnName("ImpersonatorTenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("ImpersonatorUserId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("ImpersonatorUserId");
+                        .HasColumnName("ImpersonatorUserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("TenantName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Url")
-                        .HasMaxLength(256)
+                        .HasColumnName("Url")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("Url");
+                        .HasMaxLength(256);
 
                     b.Property<Guid?>("UserId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("UserId");
+                        .HasColumnName("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserName")
-                        .HasMaxLength(256)
+                        .HasColumnName("UserName")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("UserName");
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 
@@ -140,39 +137,39 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("AuditLogId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("AuditLogId");
+                        .HasColumnName("AuditLogId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("ExecutionDuration")
-                        .HasColumnType("int")
-                        .HasColumnName("ExecutionDuration");
+                        .HasColumnName("ExecutionDuration")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ExecutionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("ExecutionTime");
+                        .HasColumnName("ExecutionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MethodName")
-                        .HasMaxLength(128)
+                        .HasColumnName("MethodName")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("MethodName");
+                        .HasMaxLength(128);
 
                     b.Property<string>("Parameters")
-                        .HasMaxLength(2000)
+                        .HasColumnName("Parameters")
                         .HasColumnType("nvarchar(2000)")
-                        .HasColumnName("Parameters");
+                        .HasMaxLength(2000);
 
                     b.Property<string>("ServiceName")
-                        .HasMaxLength(256)
+                        .HasColumnName("ServiceName")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("ServiceName");
+                        .HasMaxLength(256);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -190,39 +187,39 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("AuditLogId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("AuditLogId");
+                        .HasColumnName("AuditLogId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("ChangeTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("ChangeTime");
+                        .HasColumnName("ChangeTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<byte>("ChangeType")
-                        .HasColumnType("tinyint")
-                        .HasColumnName("ChangeType");
+                        .HasColumnName("ChangeType")
+                        .HasColumnType("tinyint");
 
                     b.Property<string>("EntityId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasColumnName("EntityId")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("EntityId");
+                        .HasMaxLength(128);
 
                     b.Property<Guid?>("EntityTenantId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("EntityTypeFullName")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasColumnName("EntityTypeFullName")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("EntityTypeFullName");
+                        .HasMaxLength(128);
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -243,30 +240,30 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("NewValue")
-                        .HasMaxLength(512)
+                        .HasColumnName("NewValue")
                         .HasColumnType("nvarchar(512)")
-                        .HasColumnName("NewValue");
+                        .HasMaxLength(512);
 
                     b.Property<string>("OriginalValue")
-                        .HasMaxLength(512)
+                        .HasColumnName("OriginalValue")
                         .HasColumnType("nvarchar(512)")
-                        .HasColumnName("OriginalValue");
+                        .HasMaxLength(512);
 
                     b.Property<string>("PropertyName")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasColumnName("PropertyName")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("PropertyName");
+                        .HasMaxLength(128);
 
                     b.Property<string>("PropertyTypeFullName")
                         .IsRequired()
-                        .HasMaxLength(64)
+                        .HasColumnName("PropertyTypeFullName")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("PropertyTypeFullName");
+                        .HasMaxLength(64);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -283,21 +280,21 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("ProviderName")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("Value")
                         .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.HasKey("Id");
 
@@ -314,33 +311,34 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .IsRequired()
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("Description")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsStatic")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("Regex")
-                        .HasMaxLength(512)
-                        .HasColumnType("nvarchar(512)");
+                        .HasColumnType("nvarchar(512)")
+                        .HasMaxLength(512);
 
                     b.Property<string>("RegexDescription")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<bool>("Required")
                         .HasColumnType("bit");
@@ -353,33 +351,6 @@ namespace AuthServer.Host.Migrations
                     b.ToTable("AbpClaimTypes");
                 });
 
-            modelBuilder.Entity("Volo.Abp.Identity.IdentityLinkUser", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("SourceTenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("SourceUserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("TargetTenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("TargetUserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SourceUserId", "SourceTenantId", "TargetUserId", "TargetTenantId")
-                        .IsUnique()
-                        .HasFilter("[SourceTenantId] IS NOT NULL AND [TargetTenantId] IS NOT NULL");
-
-                    b.ToTable("AbpLinkUsers");
-                });
-
             modelBuilder.Entity("Volo.Abp.Identity.IdentityRole", b =>
                 {
                     b.Property<Guid>("Id")
@@ -388,39 +359,40 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .IsRequired()
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDefault")
-                        .HasColumnType("bit")
-                        .HasColumnName("IsDefault");
+                        .HasColumnName("IsDefault")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsPublic")
-                        .HasColumnType("bit")
-                        .HasColumnName("IsPublic");
+                        .HasColumnName("IsPublic")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsStatic")
-                        .HasColumnType("bit")
-                        .HasColumnName("IsStatic");
+                        .HasColumnName("IsStatic")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("NormalizedName")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -436,100 +408,25 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ClaimType")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("ClaimValue")
-                        .HasMaxLength(1024)
-                        .HasColumnType("nvarchar(1024)");
+                        .HasColumnType("nvarchar(1024)")
+                        .HasMaxLength(1024);
 
                     b.Property<Guid>("RoleId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
 
                     b.ToTable("AbpRoleClaims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.Identity.IdentitySecurityLog", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Action")
-                        .HasMaxLength(96)
-                        .HasColumnType("nvarchar(96)");
-
-                    b.Property<string>("ApplicationName")
-                        .HasMaxLength(96)
-                        .HasColumnType("nvarchar(96)");
-
-                    b.Property<string>("BrowserInfo")
-                        .HasMaxLength(512)
-                        .HasColumnType("nvarchar(512)");
-
-                    b.Property<string>("ClientId")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<string>("ClientIpAddress")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
-
-                    b.Property<string>("CorrelationId")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
-
-                    b.Property<string>("Identity")
-                        .HasMaxLength(96)
-                        .HasColumnType("nvarchar(96)");
-
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
-
-                    b.Property<string>("TenantName")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TenantId", "Action");
-
-                    b.HasIndex("TenantId", "ApplicationName");
-
-                    b.HasIndex("TenantId", "Identity");
-
-                    b.HasIndex("TenantId", "UserId");
-
-                    b.ToTable("AbpSecurityLogs");
                 });
 
             modelBuilder.Entity("Volo.Abp.Identity.IdentityUser", b =>
@@ -540,136 +437,129 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("AccessFailedCount")
                         .HasColumnType("int")
-                        .HasDefaultValue(0)
-                        .HasColumnName("AccessFailedCount");
+                        .HasDefaultValue(0);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(256)
+                        .HasColumnName("Email")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("Email");
+                        .HasMaxLength(256);
 
                     b.Property<bool>("EmailConfirmed")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("EmailConfirmed")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("EmailConfirmed");
+                        .HasDefaultValue(false);
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
-
-                    b.Property<bool>("IsExternal")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsExternal");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("LockoutEnabled")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("LockoutEnabled")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("LockoutEnabled");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(64)
+                        .HasColumnName("Name")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("Name");
+                        .HasMaxLength(64);
 
                     b.Property<string>("NormalizedEmail")
                         .IsRequired()
-                        .HasMaxLength(256)
+                        .HasColumnName("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("NormalizedEmail");
+                        .HasMaxLength(256);
 
                     b.Property<string>("NormalizedUserName")
                         .IsRequired()
-                        .HasMaxLength(256)
+                        .HasColumnName("NormalizedUserName")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("NormalizedUserName");
+                        .HasMaxLength(256);
 
                     b.Property<string>("PasswordHash")
-                        .HasMaxLength(256)
+                        .HasColumnName("PasswordHash")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("PasswordHash");
+                        .HasMaxLength(256);
 
                     b.Property<string>("PhoneNumber")
-                        .HasMaxLength(16)
+                        .HasColumnName("PhoneNumber")
                         .HasColumnType("nvarchar(16)")
-                        .HasColumnName("PhoneNumber");
+                        .HasMaxLength(16);
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("PhoneNumberConfirmed")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("PhoneNumberConfirmed");
+                        .HasDefaultValue(false);
 
                     b.Property<string>("SecurityStamp")
                         .IsRequired()
-                        .HasMaxLength(256)
+                        .HasColumnName("SecurityStamp")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("SecurityStamp");
+                        .HasMaxLength(256);
 
                     b.Property<string>("Surname")
-                        .HasMaxLength(64)
+                        .HasColumnName("Surname")
                         .HasColumnType("nvarchar(64)")
-                        .HasColumnName("Surname");
+                        .HasMaxLength(64);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("TwoFactorEnabled")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("TwoFactorEnabled");
+                        .HasDefaultValue(false);
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasMaxLength(256)
+                        .HasColumnName("UserName")
                         .HasColumnType("nvarchar(256)")
-                        .HasColumnName("UserName");
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 
@@ -691,16 +581,16 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ClaimType")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("ClaimValue")
-                        .HasMaxLength(1024)
-                        .HasColumnType("nvarchar(1024)");
+                        .HasColumnType("nvarchar(1024)")
+                        .HasMaxLength(1024);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -718,21 +608,21 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("ProviderDisplayName")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
                         .IsRequired()
-                        .HasMaxLength(196)
-                        .HasColumnType("nvarchar(196)");
+                        .HasColumnType("nvarchar(196)")
+                        .HasMaxLength(196);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("UserId", "LoginProvider");
 
@@ -750,16 +640,16 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("OrganizationUnitId", "UserId");
 
@@ -777,8 +667,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -793,16 +683,16 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -820,62 +710,61 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasMaxLength(95)
+                        .HasColumnName("Code")
                         .HasColumnType("nvarchar(95)")
-                        .HasColumnName("Code");
+                        .HasMaxLength(95);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("DisplayName")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasColumnName("DisplayName")
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("DisplayName");
+                        .HasMaxLength(128);
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("ParentId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -895,16 +784,16 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("OrganizationUnitId", "RoleId");
 
@@ -919,68 +808,63 @@ namespace AuthServer.Host.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("AllowedAccessTokenSigningAlgorithms")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<string>("DisplayName")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<bool>("Enabled")
                         .HasColumnType("bit");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
-                    b.Property<bool>("ShowInDiscoveryDocument")
-                        .HasColumnType("bit");
+                    b.Property<string>("Properties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -993,135 +877,33 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Type")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.HasKey("ApiResourceId", "Type");
 
-                    b.ToTable("IdentityServerApiResourceClaims");
+                    b.ToTable("IdentityServerApiClaims");
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceProperty", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiScope", b =>
                 {
                     b.Property<Guid>("ApiResourceId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Key")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Value")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
-
-                    b.HasKey("ApiResourceId", "Key", "Value");
-
-                    b.ToTable("IdentityServerApiResourceProperties");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceScope", b =>
-                {
-                    b.Property<Guid>("ApiResourceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Scope")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("ApiResourceId", "Scope");
-
-                    b.ToTable("IdentityServerApiResourceScopes");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceSecret", b =>
-                {
-                    b.Property<Guid>("ApiResourceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Type")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Value")
-                        .HasMaxLength(4000)
-                        .HasColumnType("nvarchar(4000)");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<DateTime?>("Expiration")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ApiResourceId", "Type", "Value");
-
-                    b.ToTable("IdentityServerApiResourceSecrets");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScope", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
-
-                    b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
-
-                    b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<string>("DisplayName")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<bool>("Emphasize")
                         .HasColumnType("bit");
-
-                    b.Property<bool>("Enabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
-
-                    b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
 
                     b.Property<bool>("Required")
                         .HasColumnType("bit");
@@ -1129,41 +911,52 @@ namespace AuthServer.Host.Migrations
                     b.Property<bool>("ShowInDiscoveryDocument")
                         .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                    b.HasKey("ApiResourceId", "Name");
 
                     b.ToTable("IdentityServerApiScopes");
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScopeClaim", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiScopeClaim", b =>
                 {
-                    b.Property<Guid>("ApiScopeId")
+                    b.Property<Guid>("ApiResourceId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Type")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
-                    b.HasKey("ApiScopeId", "Type");
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.HasKey("ApiResourceId", "Name", "Type");
 
                     b.ToTable("IdentityServerApiScopeClaims");
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScopeProperty", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiSecret", b =>
                 {
-                    b.Property<Guid>("ApiScopeId")
+                    b.Property<Guid>("ApiResourceId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Key")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Value")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(4000)")
+                        .HasMaxLength(4000);
 
-                    b.HasKey("ApiScopeId", "Key", "Value");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
-                    b.ToTable("IdentityServerApiScopeProperties");
+                    b.Property<DateTime?>("Expiration")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ApiResourceId", "Type", "Value");
+
+                    b.ToTable("IdentityServerApiSecrets");
                 });
 
             modelBuilder.Entity("Volo.Abp.IdentityServer.Clients.Client", b =>
@@ -1193,10 +986,6 @@ namespace AuthServer.Host.Migrations
                     b.Property<bool>("AllowRememberConsent")
                         .HasColumnType("bit");
 
-                    b.Property<string>("AllowedIdentityTokenSigningAlgorithms")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<bool>("AlwaysIncludeUserClaimsInIdToken")
                         .HasColumnType("bit");
 
@@ -1210,54 +999,53 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("BackChannelLogoutUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<string>("ClientClaimsPrefix")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ClientId")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ClientName")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ClientUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ConsentLifetime")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<int>("DeviceCodeLifetime")
                         .HasColumnType("int");
@@ -1269,15 +1057,15 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("FrontChannelLogoutSessionRequired")
                         .HasColumnType("bit");
 
                     b.Property<string>("FrontChannelLogoutUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<int>("IdentityTokenLifetime")
                         .HasColumnType("int");
@@ -1287,30 +1075,30 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LogoUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<string>("PairWiseSubjectSalt")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ProtocolType")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<int>("RefreshTokenExpiration")
                         .HasColumnType("int");
@@ -1327,9 +1115,6 @@ namespace AuthServer.Host.Migrations
                     b.Property<bool>("RequirePkce")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("RequireRequestObject")
-                        .HasColumnType("bit");
-
                     b.Property<int>("SlidingRefreshTokenLifetime")
                         .HasColumnType("int");
 
@@ -1337,8 +1122,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserCodeType")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<int?>("UserSsoLifetime")
                         .HasColumnType("int");
@@ -1356,12 +1141,12 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Type")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Value")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.HasKey("ClientId", "Type", "Value");
 
@@ -1374,8 +1159,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Origin")
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(150)")
+                        .HasMaxLength(150);
 
                     b.HasKey("ClientId", "Origin");
 
@@ -1388,8 +1173,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("GrantType")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.HasKey("ClientId", "GrantType");
 
@@ -1402,8 +1187,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Provider")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.HasKey("ClientId", "Provider");
 
@@ -1416,8 +1201,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("PostLogoutRedirectUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.HasKey("ClientId", "PostLogoutRedirectUri");
 
@@ -1430,14 +1215,15 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Key")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Value")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
-                    b.HasKey("ClientId", "Key", "Value");
+                    b.HasKey("ClientId", "Key");
 
                     b.ToTable("IdentityServerClientProperties");
                 });
@@ -1448,8 +1234,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("RedirectUri")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.HasKey("ClientId", "RedirectUri");
 
@@ -1462,8 +1248,8 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Scope")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.HasKey("ClientId", "Scope");
 
@@ -1476,16 +1262,16 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Type")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Value")
-                        .HasMaxLength(4000)
-                        .HasColumnType("nvarchar(4000)");
+                        .HasColumnType("nvarchar(4000)")
+                        .HasMaxLength(4000);
 
                     b.Property<string>("Description")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<DateTime?>("Expiration")
                         .HasColumnType("datetime2");
@@ -1503,57 +1289,48 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ClientId")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasMaxLength(50000)
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasMaxLength(50000);
 
                     b.Property<string>("DeviceCode")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<DateTime?>("Expiration")
                         .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
-
-                    b.Property<string>("SessionId")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubjectId")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("UserCode")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.HasKey("Id");
 
@@ -1562,7 +1339,8 @@ namespace AuthServer.Host.Migrations
 
                     b.HasIndex("Expiration");
 
-                    b.HasIndex("UserCode");
+                    b.HasIndex("UserCode")
+                        .IsUnique();
 
                     b.ToTable("IdentityServerDeviceFlowCodes");
                 });
@@ -1570,57 +1348,45 @@ namespace AuthServer.Host.Migrations
             modelBuilder.Entity("Volo.Abp.IdentityServer.Grants.PersistedGrant", b =>
                 {
                     b.Property<string>("Key")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ClientId")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
-
-                    b.Property<DateTime?>("ConsumedTime")
-                        .HasColumnType("datetime2");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasMaxLength(50000)
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasMaxLength(50000);
 
                     b.Property<DateTime?>("Expiration")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("SessionId")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<string>("SubjectId")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("Key");
 
@@ -1628,9 +1394,21 @@ namespace AuthServer.Host.Migrations
 
                     b.HasIndex("SubjectId", "ClientId", "Type");
 
-                    b.HasIndex("SubjectId", "SessionId", "Type");
-
                     b.ToTable("IdentityServerPersistedGrants");
+                });
+
+            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityClaim", b =>
+                {
+                    b.Property<Guid>("IdentityResourceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.HasKey("IdentityResourceId", "Type");
+
+                    b.ToTable("IdentityServerIdentityClaims");
                 });
 
             modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResource", b =>
@@ -1641,33 +1419,32 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<string>("DisplayName")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<bool>("Emphasize")
                         .HasColumnType("bit");
@@ -1676,27 +1453,30 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Properties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Required")
                         .HasColumnType("bit");
@@ -1709,38 +1489,6 @@ namespace AuthServer.Host.Migrations
                     b.ToTable("IdentityServerIdentityResources");
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResourceClaim", b =>
-                {
-                    b.Property<Guid>("IdentityResourceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Type")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("IdentityResourceId", "Type");
-
-                    b.ToTable("IdentityServerIdentityResourceClaims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResourceProperty", b =>
-                {
-                    b.Property<Guid>("IdentityResourceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Key")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Value")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
-
-                    b.HasKey("IdentityResourceId", "Key", "Value");
-
-                    b.ToTable("IdentityServerIdentityResourceProperties");
-                });
-
             modelBuilder.Entity("Volo.Abp.PermissionManagement.PermissionGrant", b =>
                 {
                     b.Property<Guid>("Id")
@@ -1749,22 +1497,22 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
                         .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("ProviderName")
                         .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("TenantId");
+                        .HasColumnName("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -1781,21 +1529,21 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("ProviderName")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("Value")
                         .IsRequired()
-                        .HasMaxLength(2048)
-                        .HasColumnType("nvarchar(2048)");
+                        .HasColumnType("nvarchar(2048)")
+                        .HasMaxLength(2048);
 
                     b.HasKey("Id");
 
@@ -1812,48 +1560,47 @@ namespace AuthServer.Host.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)")
-                        .HasColumnName("ConcurrencyStamp");
+                        .HasColumnName("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("CreationTime");
+                        .HasColumnName("CreationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("CreatorId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("CreatorId");
+                        .HasColumnName("CreatorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("DeleterId");
+                        .HasColumnName("DeleterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("DeletionTime");
+                        .HasColumnName("DeletionTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ExtraProperties")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ExtraProperties");
+                        .HasColumnName("ExtraProperties")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("IsDeleted")
                         .HasColumnType("bit")
-                        .HasDefaultValue(false)
-                        .HasColumnName("IsDeleted");
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("LastModificationTime");
+                        .HasColumnName("LastModificationTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("LastModifierId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("LastModifierId");
+                        .HasColumnName("LastModifierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.HasKey("Id");
 
@@ -1868,13 +1615,13 @@ namespace AuthServer.Host.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("Value")
                         .IsRequired()
-                        .HasMaxLength(1024)
-                        .HasColumnType("nvarchar(1024)");
+                        .HasColumnType("nvarchar(1024)")
+                        .HasMaxLength(1024);
 
                     b.HasKey("TenantId", "Name");
 
@@ -2005,16 +1752,7 @@ namespace AuthServer.Host.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceProperty", b =>
-                {
-                    b.HasOne("Volo.Abp.IdentityServer.ApiResources.ApiResource", null)
-                        .WithMany("Properties")
-                        .HasForeignKey("ApiResourceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceScope", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiScope", b =>
                 {
                     b.HasOne("Volo.Abp.IdentityServer.ApiResources.ApiResource", null)
                         .WithMany("Scopes")
@@ -2023,29 +1761,20 @@ namespace AuthServer.Host.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResourceSecret", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiScopeClaim", b =>
+                {
+                    b.HasOne("Volo.Abp.IdentityServer.ApiResources.ApiScope", null)
+                        .WithMany("UserClaims")
+                        .HasForeignKey("ApiResourceId", "Name")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiSecret", b =>
                 {
                     b.HasOne("Volo.Abp.IdentityServer.ApiResources.ApiResource", null)
                         .WithMany("Secrets")
                         .HasForeignKey("ApiResourceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScopeClaim", b =>
-                {
-                    b.HasOne("Volo.Abp.IdentityServer.ApiScopes.ApiScope", null)
-                        .WithMany("UserClaims")
-                        .HasForeignKey("ApiScopeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScopeProperty", b =>
-                {
-                    b.HasOne("Volo.Abp.IdentityServer.ApiScopes.ApiScope", null)
-                        .WithMany("Properties")
-                        .HasForeignKey("ApiScopeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -2131,19 +1860,10 @@ namespace AuthServer.Host.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResourceClaim", b =>
+            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityClaim", b =>
                 {
                     b.HasOne("Volo.Abp.IdentityServer.IdentityResources.IdentityResource", null)
                         .WithMany("UserClaims")
-                        .HasForeignKey("IdentityResourceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResourceProperty", b =>
-                {
-                    b.HasOne("Volo.Abp.IdentityServer.IdentityResources.IdentityResource", null)
-                        .WithMany("Properties")
                         .HasForeignKey("IdentityResourceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -2156,92 +1876,6 @@ namespace AuthServer.Host.Migrations
                         .HasForeignKey("TenantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLog", b =>
-                {
-                    b.Navigation("Actions");
-
-                    b.Navigation("EntityChanges");
-                });
-
-            modelBuilder.Entity("Volo.Abp.AuditLogging.EntityChange", b =>
-                {
-                    b.Navigation("PropertyChanges");
-                });
-
-            modelBuilder.Entity("Volo.Abp.Identity.IdentityRole", b =>
-                {
-                    b.Navigation("Claims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.Identity.IdentityUser", b =>
-                {
-                    b.Navigation("Claims");
-
-                    b.Navigation("Logins");
-
-                    b.Navigation("OrganizationUnits");
-
-                    b.Navigation("Roles");
-
-                    b.Navigation("Tokens");
-                });
-
-            modelBuilder.Entity("Volo.Abp.Identity.OrganizationUnit", b =>
-                {
-                    b.Navigation("Roles");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiResources.ApiResource", b =>
-                {
-                    b.Navigation("Properties");
-
-                    b.Navigation("Scopes");
-
-                    b.Navigation("Secrets");
-
-                    b.Navigation("UserClaims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.ApiScopes.ApiScope", b =>
-                {
-                    b.Navigation("Properties");
-
-                    b.Navigation("UserClaims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.Clients.Client", b =>
-                {
-                    b.Navigation("AllowedCorsOrigins");
-
-                    b.Navigation("AllowedGrantTypes");
-
-                    b.Navigation("AllowedScopes");
-
-                    b.Navigation("Claims");
-
-                    b.Navigation("ClientSecrets");
-
-                    b.Navigation("IdentityProviderRestrictions");
-
-                    b.Navigation("PostLogoutRedirectUris");
-
-                    b.Navigation("Properties");
-
-                    b.Navigation("RedirectUris");
-                });
-
-            modelBuilder.Entity("Volo.Abp.IdentityServer.IdentityResources.IdentityResource", b =>
-                {
-                    b.Navigation("Properties");
-
-                    b.Navigation("UserClaims");
-                });
-
-            modelBuilder.Entity("Volo.Abp.TenantManagement.Tenant", b =>
-                {
-                    b.Navigation("ConnectionStrings");
                 });
 #pragma warning restore 612, 618
         }
