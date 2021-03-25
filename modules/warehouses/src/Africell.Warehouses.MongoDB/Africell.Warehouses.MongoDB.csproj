@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Africell.Warehouses</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.MongoDB" Version="4.2.0" />
+    <ProjectReference Include="..\Africell.Warehouses.Domain\Africell.Warehouses.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

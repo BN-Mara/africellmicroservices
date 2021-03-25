@@ -1,0 +1,11 @@
+{
+  "culture": "en",
+  "texts": {
+    "ManageYourProfile":  "Manage your profile",
+    "SamplePageMessage": "A sample page for the Product module",
+    "Permmission:Products": "Product Management",
+    "Permission:Products.Create": "Creating new product",
+    "Permission:Products.Edit": "Editing the product",
+    "Permission:Products.Delete": "Deleting the product" 
+  }
+}

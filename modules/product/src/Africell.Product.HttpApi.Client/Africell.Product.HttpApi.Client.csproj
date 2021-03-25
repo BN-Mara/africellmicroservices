@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Africell.Product</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="4.2.0" />
+    <ProjectReference Include="..\Africell.Product.Application.Contracts\Africell.Product.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

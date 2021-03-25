@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Africell.Product</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Autofac" Version="4.2.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.2.0" />
+    <ProjectReference Include="..\Africell.Product.Domain.Shared\Africell.Product.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
